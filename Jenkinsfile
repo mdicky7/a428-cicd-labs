@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Approval Deploy') {
             steps {
-                input message: 'Lanjutkan ke tahap deploy ? (Klik "Proceed" untuk mengakhiri)'
+                input message: 'Lanjutkan ke tahap deploy ? (Klik "Proceed" or "Abort")'
             }
         }
         stage('Deploy') {
